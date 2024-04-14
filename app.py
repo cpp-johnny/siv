@@ -1,4 +1,9 @@
-# to run type `python -m streamlit run app.py`
+# to run on localhost type `python -m streamlit run app.py`
+# take note that you need to be in the correct directory
+# to update on production type 
+# `git  add .`
+# `git commit -m "enter message"`
+# `git push -u origin master`
 from PIL import Image, ImageDraw      # pip install Pillow
 import streamlit as st      # pip install streamlit
 import requests
