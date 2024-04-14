@@ -54,8 +54,8 @@ def crop_to_circle(image):
 
 # Load the images for members
 member_images = [
-    Image.open("images/test.png"),
-    Image.open("images/test.png"),
+    Image.open("images/j.jpeg"),
+    Image.open("images/s.jpeg"),
     Image.open("images/test.png"),
     Image.open("images/test.png"),
     Image.open("images/test.png")
@@ -73,8 +73,8 @@ for img in member_images:
 
 # Define member names and role
 member_names = [
-    {"name": "Member 1", "role": "bro"},
-    {"name": "Member 2", "role": "Role2"},
+    {"name": "Johnson", "role": "progammer 👨‍💻"},
+    {"name": "Song Bo", "role": "Role2"},
     {"name": "Member 3", "role": "Role3"},
     {"name": "Member 4", "role": "Role4"},
     {"name": "Member 5", "role": "Role5"}
