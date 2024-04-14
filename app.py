@@ -54,10 +54,10 @@ def crop_to_circle(image):
 
 # Load the images for members
 member_images = [
+    Image.open("images/c.jpeg"),
     Image.open("images/j.jpeg"),
+    Image.open("images/b.jpeg"),
     Image.open("images/s.jpeg"),
-    Image.open("images/test.png"),
-    Image.open("images/test.png"),
     Image.open("images/test.png")
 ]
 
@@ -73,10 +73,10 @@ for img in member_images:
 
 # Define member names and role
 member_names = [
-    {"name": "Johnson", "role": "progammer 👨‍💻"},
-    {"name": "Song Bo", "role": "Role2"},
-    {"name": "Member 3", "role": "Role3"},
-    {"name": "Member 4", "role": "Role4"},
+    {"name": "Clark", "role": "Project Coordinator ⚙️"},
+    {"name": "Johnson", "role": "Progammer 👨‍💻"},
+    {"name": "Bangyu", "role": "Merch Desgin 🔥"},
+    {"name": "Song Bo", "role": "Role4"},
     {"name": "Member 5", "role": "Role5"}
 ]
 img_bytes = io.BytesIO()
@@ -153,7 +153,7 @@ with st.container():
     col1, col2, col3, col4, col5 = st.columns(5)
     for i, col in enumerate([col1, col2, col3, col4, col5]):
         col.image(member_images_bytes[i], use_column_width='always', output_format='PNG')
-        col.markdown(f"<p style='text-align: center;'>{member_names[i]['name']}</p>", unsafe_allow_html=True)
+        col.markdown(f"<p style='text-align: center; font-size: larger; font-weight: bold;'>{member_names[i]['name']}</p>", unsafe_allow_html=True)
         col.markdown(f"<p style='text-align: center;'> {member_names[i]['role']}</p>", unsafe_allow_html=True)  # Display role here
 
 # Our Products section
