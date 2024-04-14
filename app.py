@@ -238,3 +238,28 @@ st.header("Social")
 st.markdown(f"<a href='{INSTAGRAM_LINK}' class='instagram-link' target='_blank'><i class='fa fa-instagram'></i> Follow us on Instagram!</a>", unsafe_allow_html=True)
 
 
+# GitHub link
+GITHUB_LINK = "https://github.com/cpp-johnny/siv"
+
+# Custom CSS for styling
+github_css = """
+<style>
+.github-link {
+    font-size: 18px;
+    color: #24292e; /* GitHub's default link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-link:hover {
+    color: #0366d6; /* GitHub's default hover color */
+}
+</style>
+"""
+
+# Display the custom CSS for GitHub
+st.markdown(github_css, unsafe_allow_html=True)
+
+
+# Display GitHub link with custom CSS and icon
+st.markdown(f"<a href='{GITHUB_LINK}' class='github-link' target='_blank'><i class='fa fa-github'></i> Check out the source code on GitHub!</a>", unsafe_allow_html=True)
