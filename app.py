@@ -71,8 +71,14 @@ for img in member_images:
     img.save(img_bytes, format='PNG')
     member_images_bytes.append(img_bytes.getvalue())
 
-# Define member names
-member_names = ["Member 1", "Member 2", "Member 3", "Member 4", "Member 5"]
+# Define member names and role
+member_names = [
+    {"name": "Member 1", "role": "bro"},
+    {"name": "Member 2", "role": "Role2"},
+    {"name": "Member 3", "role": "Role3"},
+    {"name": "Member 4", "role": "Role4"},
+    {"name": "Member 5", "role": "Role5"}
+]
 img_bytes = io.BytesIO()
 img_rdss.save(img_bytes, format='PNG')
 img_str = base64.b64encode(img_bytes.getvalue()).decode()
@@ -143,11 +149,12 @@ with st.container():
     st.write("---")
     st.markdown("<h1 style='text-align: center;'>Our Members</h1>", unsafe_allow_html=True)
 
-    # Display images and names of members
+    # Display images, names, and roles of members
     col1, col2, col3, col4, col5 = st.columns(5)
     for i, col in enumerate([col1, col2, col3, col4, col5]):
         col.image(member_images_bytes[i], use_column_width='always', output_format='PNG')
-        col.markdown(f"<p style='text-align: center;'>{member_names[i]}</p>", unsafe_allow_html=True)
+        col.markdown(f"<p style='text-align: center;'>{member_names[i]['name']}</p>", unsafe_allow_html=True)
+        col.markdown(f"<p style='text-align: center;'> {member_names[i]['role']}</p>", unsafe_allow_html=True)  # Display role here
 
 # Our Products section
 with st.container():    
