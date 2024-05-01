@@ -206,7 +206,7 @@ with st.container():
 st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">', unsafe_allow_html=True)
 
 # Instagram link
-INSTAGRAM_LINK = "https://www.instagram.com/your_instagram_username/"
+INSTAGRAM_LINK = "https://www.instagram.com/sivprojectcognition?igsh=MTN3am45NHRxdjJ0MQ=="
 
 # Custom CSS for styling
 custom_css = """
