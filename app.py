@@ -63,7 +63,7 @@ member_images = [
     Image.open("images/j.jpeg"),
     Image.open("images/b.jpeg"),
     Image.open("images/s.jpeg"),
-    Image.open("images/test.png")
+    Image.open("images/f.jpg")
 ]
 
 # Crop images to circles
@@ -82,7 +82,7 @@ member_names = [
     {"name": "Johnson", "role": "Progammer 👨‍💻"},
     {"name": "Bangyu", "role": "Merch Design 🔥"},
     {"name": "Song Bo", "role": "Secretary ⚡️"},
-    {"name": "Member 5", "role": "Role5"}
+    {"name": "Feiyang  ", "role": "Treasurer 💵"}
 ]
 img_bytes = io.BytesIO()
 img_rdss.save(img_bytes, format='PNG')
