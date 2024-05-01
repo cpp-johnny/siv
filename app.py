@@ -80,8 +80,8 @@ for img in member_images:
 member_names = [
     {"name": "Clark", "role": "Project Coordinator ⚙️"},
     {"name": "Johnson", "role": "Progammer 👨‍💻"},
-    {"name": "Bangyu", "role": "Merch Desgin 🔥"},
-    {"name": "Song Bo", "role": "Role4"},
+    {"name": "Bangyu", "role": "Merch Design 🔥"},
+    {"name": "Song Bo", "role": "Secretary ⚡️"},
     {"name": "Member 5", "role": "Role5"}
 ]
 img_bytes = io.BytesIO()
