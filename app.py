@@ -100,24 +100,14 @@ def crop_to_circle(image):
 
 # Load the images for products
 product_images = [
-    Image.open("images/dog.jpg"),
-    Image.open("images/dog.jpg"),
-    Image.open("images/dog.jpg"),
-    Image.open("images/dog.jpg"),
-    Image.open("images/dog.jpg"),
-    Image.open("images/dog.jpg"),
-    Image.open("images/dog.jpg")
+    Image.open("images/keychain.jpg"),
+    Image.open("images/pin.jpg"),
+    Image.open("images/plushie.jpg"),
+    Image.open("images/accessories.jpg"),
+    Image.open("images/socks.jpg"),
+    Image.open("images/fan.jpg"),
+    Image.open("images/sticker.jpg")
 ]
-
-# Crop images to circles
-product_images_circles = [crop_to_circle(img) for img in product_images]
-
-# Convert images to bytes
-product_images_bytes = []
-for img in product_images_circles:
-    img_bytes = io.BytesIO()
-    img.save(img_bytes, format='PNG')
-    product_images_bytes.append(img_bytes.getvalue())
 
 # Define product names and prices
 product_info = [
@@ -131,7 +121,7 @@ product_info = [
 ]
 
 # link to product price pdf or something on google dribe idk
-product_link = "https://www.merriam-webster.com/dictionary/bruh"  # Set the link for all products
+product_link = "https://drive.google.com/file/d/1Z21NvboLhFjuvxHkWohXf2KUJCZwD6Fe/view?usp=sharing"  # Set the link for all products
 
 # Top
 with st.container(): 
@@ -178,7 +168,7 @@ with st.container():
     # Display images, names, and prices of products
     col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
     for i, col in enumerate([col1, col2, col3, col4, col5, col6, col7]):
-        col.image(product_images_bytes[i], use_column_width='always', output_format='PNG')
+        col.image(product_images[i], use_column_width='always', output_format='PNG')
         col.markdown(f"<p style='text-align: center;'>{product_info[i]['name']}</p>", unsafe_allow_html=True)
         col.markdown(f"<p style='text-align: center;'><a href='{product_link}' target='_blank'>Price: {product_info[i]['price']}</a></p>", unsafe_allow_html=True)
     st.write("")
