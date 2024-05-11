@@ -104,6 +104,8 @@ product_images = [
     Image.open("images/dog.jpg"),
     Image.open("images/dog.jpg"),
     Image.open("images/dog.jpg"),
+    Image.open("images/dog.jpg"),
+    Image.open("images/dog.jpg"),
     Image.open("images/dog.jpg")
 ]
 
@@ -119,11 +121,13 @@ for img in product_images_circles:
 
 # Define product names and prices
 product_info = [
-    {"name": "Product 1", "price": "$10"},
-    {"name": "Product 2", "price": "$20"},
-    {"name": "Product 3", "price": "$30"},
-    {"name": "Product 4", "price": "$40"},
-    {"name": "Product 5", "price": "$50"}
+    {"name": "Keychains", "price": "$2.50"},
+    {"name": "Enamel Pins", "price": "$4.50 - 9"},
+    {"name": "Plushie", "price": "$10 - 20"},
+    {"name": "Table Accessories", "price": "$0.50-3"},
+    {"name": "Socks", "price": "$8"},
+    {"name": "Fans", "price": "$4"},
+    {"name": "Stickers", "price": "$5"}
 ]
 
 # link to product price pdf or something on google dribe idk
@@ -166,17 +170,21 @@ with st.container():
     # Our Products section
     st.write("---")
     st.markdown("<h1 style='text-align: center;'>Our Products</h1>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center;'>Check out the <a href='https://drive.google.com/file/d/1Z21NvboLhFjuvxHkWohXf2KUJCZwD6Fe/view?usp=sharing'>catalogue</a> for more in-depth details!</h3>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center;'>note: these are not all the products available, please check out the catalogue for more items :)</div>", unsafe_allow_html=True)
+    st.write("")
+    st.write("")
 
     # Display images, names, and prices of products
-    col1, col2, col3, col4, col5 = st.columns(5)
-    for i, col in enumerate([col1, col2, col3, col4, col5]):
+    col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+    for i, col in enumerate([col1, col2, col3, col4, col5, col6, col7]):
         col.image(product_images_bytes[i], use_column_width='always', output_format='PNG')
         col.markdown(f"<p style='text-align: center;'>{product_info[i]['name']}</p>", unsafe_allow_html=True)
         col.markdown(f"<p style='text-align: center;'><a href='{product_link}' target='_blank'>Price: {product_info[i]['price']}</a></p>", unsafe_allow_html=True)
     st.write("")
     st.write("")
     st.write("")
-    st.markdown("<div style='text-align: center;'>To purchase, please visit <a href='https://forms.google.com/'>this Google Form</a>. Thank you for your support! 🙏🙏🙏</div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center;'>To purchase, please visit <a href='https://docs.google.com/forms/d/e/1FAIpQLSeK7s6_n-zulZAszlklLkfx44Gz8NPMpZKL51I5_ezVLwNdvA/viewform?usp=sf_link'>this Google Form</a>. Thank you for your support! 🙏🙏🙏</div>", unsafe_allow_html=True)
 
 # Contact area
 with st.container():
