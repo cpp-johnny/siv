@@ -174,7 +174,7 @@ with st.container():
     st.write("")
     st.write("")
     st.write("")
-    st.markdown("<div style='text-align: center;'>To purchase, please visit <a href='https://docs.google.com/forms/d/e/1FAIpQLSeK7s6_n-zulZAszlklLkfx44Gz8NPMpZKL51I5_ezVLwNdvA/viewform?usp=sf_link'>this Google Form</a>. Thank you for your support! 🙏🙏🙏</div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center;'>To purchase, please visit <a href='https://docs.google.com/forms/d/e/1FAIpQLSeK7s6_n-zulZAszlklLkfx44Gz8NPMpZKL51I5_ezVLwNdvA/viewform?usp=sf_link'>this Google Form</a>. Thank you for your support! 🙏🙏🙏 All funds collected will go to RDSS</div>", unsafe_allow_html=True)
 
 # Contact area
 with st.container():
