@@ -121,7 +121,7 @@ product_info = [
 ]
 
 # link to product price pdf or something on google dribe idk
-product_link = "https://drive.google.com/file/d/1Z21NvboLhFjuvxHkWohXf2KUJCZwD6Fe/view?usp=sharing"  # Set the link for all products
+product_link = "https://drive.google.com/file/d/16YTpfqXpXwK0K7DTLAtuv9pieFL_m3sG/view?usp=sharing"  # Set the link for all products
 
 # Top
 with st.container(): 
@@ -160,7 +160,7 @@ with st.container():
     # Our Products section
     st.write("---")
     st.markdown("<h1 style='text-align: center;'>Our Products</h1>", unsafe_allow_html=True)
-    st.markdown("<h3 style='text-align: center;'>Check out the <a href='https://drive.google.com/file/d/1Z21NvboLhFjuvxHkWohXf2KUJCZwD6Fe/view?usp=sharing'>catalogue</a> for more in-depth details!</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center;'>Check out the <a href='https://drive.google.com/file/d/16YTpfqXpXwK0K7DTLAtuv9pieFL_m3sG/view?usp=sharing'>catalogue</a> for more in-depth details!</h3>", unsafe_allow_html=True)
     st.markdown("<div style='text-align: center;'>note: these are not all the products available, please check out the catalogue for more items :)</div>", unsafe_allow_html=True)
     st.write("")
     st.write("")
