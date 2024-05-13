@@ -81,7 +81,7 @@ member_names = [
     {"name": "Clark", "role": "Project Coordinator ⚙️"},
     {"name": "Johnson", "role": "Progammer 👨‍💻"},
     {"name": "Bangyu", "role": "Merch Design 🔥"},
-    {"name": "Song Bo", "role": "Secretary ⚡️"},
+    {"name": "Songbo", "role": "Secretary ⚡️"},
     {"name": "Feiyang  ", "role": "Treasurer 💵"}
 ]
 img_bytes = io.BytesIO()
