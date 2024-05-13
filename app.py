@@ -78,8 +78,8 @@ for img in member_images:
 
 # Define member names and role
 member_names = [
-    {"name": "Clark", "role": "Project Coordinator ⚙️"},
-    {"name": "Johnson", "role": "Progammer 👨‍💻"},
+    {"name": "Clark", "role": "Founder | Project Coord ⚙️"},
+    {"name": "Johnson", "role": "Co-Founder | Progammer 👨‍💻"},
     {"name": "Bangyu", "role": "Merch Design 🔥"},
     {"name": "Songbo", "role": "Secretary ⚡️"},
     {"name": "Feiyang  ", "role": "Treasurer 💵"}
