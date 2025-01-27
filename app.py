@@ -4,6 +4,7 @@
 # `git  add .`
 # `git commit -m "enter message"`
 # `git push -u origin master`
+# update 27/1/2025 bruh why did it break during cny, reuploading to see if problem fix
 from PIL import Image, ImageDraw      # pip install Pillow
 import streamlit as st      # pip install streamlit
 import requests
