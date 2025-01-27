@@ -5,6 +5,7 @@
 # `git commit -m "enter message"`
 # `git push -u origin master`
 # update 27/1/2025 bruh why did it break during cny, reuploading to see if problem fix
+# lmao bruh altair broke or something, downgrading to v4.0 works now too cursed bruh
 from PIL import Image, ImageDraw      # pip install Pillow
 import streamlit as st      # pip install streamlit
 import requests
